@@ -6,3 +6,5 @@ WORKDIR /ircanywhere
 RUN nave use 0.10.32 npm install -g gulp
 RUN nave use 0.10.32 npm install
 RUN nave use 0.10.32 gulp
+RUN apt-get install -yq mongodb
+RUN mv config.e* config.js
