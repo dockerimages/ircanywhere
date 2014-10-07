@@ -1,3 +1,3 @@
 FROM dockerimages/docker-nave
 ADD . /ircanywhere
-RUN /ircanywhere/install.sh
+RUN nave use 0.10.32 && /ircanywhere/install.sh
